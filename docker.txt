@@ -1,0 +1,26 @@
+docker-compose-init.yml
+version: "3"
+service:
+	web:
+		image: nginx
+		port:
+			- "8080:80"
+		volumes:
+			- data:/var/data
+		network
+			- formation
+			
+			
+	
+	volumes:
+		data: {}
+	networks:
+		formation: {}
+		
+		
+		
+		Av. Edmond-Vaucher 18, Case postale 3100, CH-1211 Genève 2
+Tél. +41 58 461 91 11
+Fax +41 58 461 97 05
+mailto:AVS-465@zas.admin.ch
+www.cdc.admin.ch
